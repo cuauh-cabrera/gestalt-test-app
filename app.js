@@ -18,76 +18,27 @@ generateId = () => {
 }
 
 //Valorization categories
-
-// Fase
-const fasCat = {
-    fase_1: "Reposo",
-    fase_2: "Sensacion",
-    fase_3: "Formacion de figura",
-    fase_4: "Movilizacion",
-    fase_5: "Accion",
-    fase_6: "Precontacto",
-    fase_7: "Contacto",
-    fase_8: "Poscontacto"
+class testCat {
+    constructor (cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8) {
+        this.cat1 = cat1,
+        this.cat2 = cat2,
+        this.cat3 = cat3,
+        this.cat4 = cat4,
+        this.cat5 = cat5,
+        this.cat6 = cat6,
+        this.cat7 = cat7,
+        this.cat8 = cat8
+    }
 }
 
-//Bloqueo
-const bloqCat = {
-    bloqueo_1: "Retencion",
-    bloqueo_2: "De sencibilizacion",
-    bloqueo_3: "Proyeccion",
-    bloqueo_4: "Introproyeccion",
-    bloqueo_5: "Retroflexion",
-    bloqueo_6: "Deflexion",
-    bloqueo_7: "Confluencia",
-    bloqueo_8: "Fijacion"
-}
+const fases = new testCat ("Reposo","Sensacion","Formacion de figura","Movilizacion","Accion","Precontacto","Contacto","Poscontacto");
+const bloqueo = new testCat ("Retencion","De sencibilizacion","Proyeccion","Introproyeccion","Retroflexion","Deflexion","Confluencia","Fijacion");
+const temor = new testCat ("A triunfar","A sufrir","Al castigo","Al rechazo","A propia agresion","A enfrentar","Al abandono","A ser libre");
+const mensaje = new testCat("No mereces","No te amaran","Te danaran","Te rechazaran","No actues","No enfrentes","Te dejaran","Estaras solo");
+const necesidad = new testCat("Relajacion","Placer","Reconocimiento","Aceptacion","Expresion","Identificacion","Pertenecia","Intendencia");
+const noMatch = new testCat ("Fase no determinada","Bloqueo no determinado","Temor no determinado","Mensaje no determinado","Necesidad no determinada");
 
-//Temor
-const temCat = {
-    temor_1: "A triunfar",
-    temor_2: "A sufrir",
-    temor_3: "Al castigo",
-    temor_4: "Al rechazo",
-    temor_5: "A propia agresion",
-    temor_6: "A enfrentar",
-    temor_7: "Al abandono",
-    temor_8: "A ser libre"
-}
-
-//Mensaje
-const menCat = {
-    mensaje_1: "No mereces",
-    mensaje_2: "No te amaran",
-    mensaje_3: "Te danaran",
-    mensaje_4: "Te rechazaran",
-    mensaje_5: "No actues",
-    mensaje_6: "No enfrentes",
-    mensaje_7: "Te dejaran",
-    mensaje_8: "Estaras solo"
-}
-
-//Necesidad
-const necCat = {
-    necesidad_1: "Relajacion",
-    necesidad_2: "Placer",
-    necesidad_3: "Reconocimiento",
-    necesidad_4: "Aceptacion",
-    necesidad_5: "Expresion",
-    necesidad_6: "Identificacion",
-    necesidad_7: "Pertenecia",
-    necesidad_8: "Intendencia"
-}
-
-//No match
-const noMatch = {
-    fase: "Fase no determinada",
-    bloqueo: "Bloqueo no determinado",
-    temor: "Temor no determinado",
-    mensaje: "Mensaje no determinado",
-    necesidad: "Necesidad no determinada" 
-}
-
+const testCategories = [fases, bloqueo, temor, mensaje, necesidad, noMatch];
 
 //Get user info
 let userName = prompt('Captura tu nombre',).trim().toLocaleLowerCase();
