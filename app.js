@@ -31,14 +31,12 @@ class testCat {
     }
 }
 
-const fases = new testCat ("Reposo","Sensacion","Formacion de figura","Movilizacion","Accion","Precontacto","Contacto","Poscontacto");
+const fase = new testCat ("Reposo","Sensacion","Formacion de figura","Movilizacion","Accion","Precontacto","Contacto","Poscontacto");
 const bloqueo = new testCat ("Retencion","De sencibilizacion","Proyeccion","Introproyeccion","Retroflexion","Deflexion","Confluencia","Fijacion");
 const temor = new testCat ("A triunfar","A sufrir","Al castigo","Al rechazo","A propia agresion","A enfrentar","Al abandono","A ser libre");
 const mensaje = new testCat("No mereces","No te amaran","Te danaran","Te rechazaran","No actues","No enfrentes","Te dejaran","Estaras solo");
 const necesidad = new testCat("Relajacion","Placer","Reconocimiento","Aceptacion","Expresion","Identificacion","Pertenecia","Intendencia");
 const noMatch = new testCat ("Fase no determinada","Bloqueo no determinado","Temor no determinado","Mensaje no determinado","Necesidad no determinada");
-
-const testCategories = [fases, bloqueo, temor, mensaje, necesidad, noMatch];
 
 //Get user info
 let userName = prompt('Captura tu nombre',).trim().toLocaleLowerCase();
@@ -116,76 +114,76 @@ confirm('Gracias por responder el cuestionario. Tus respuestas han sido guardada
 //Valorization contrasts
 if (userProfile["ans9"] === "si" || userProfile["ans16"] === "no" || userProfile["ans28"] === "si" || userProfile["ans37"] === "no") {
 
-    userProfile["fase"] = fasCat["fase_1"];
-    userProfile["bloqueo"] = bloqCat["bloqueo_1"];
-    userProfile["temor"] = temCat["temor_1"];
-    userProfile["mensaje"] = menCat["mensaje_1"];
-    userProfile["necesidad"] = necCat["necesidad_1"];
+    userProfile["fase"] = fase["cat1"];
+    userProfile["bloqueo"] = bloqueo["cat1"];
+    userProfile["temor"] = temor["cat1"];
+    userProfile["mensaje"] = mensaje["cat1"];
+    userProfile["necesidad"] = necesidad["cat1"];
 
 } else if (userProfile["ans1"] === "no" || userProfile["ans18"] === "no" || userProfile["ans26"] === "si" || userProfile["ans36"] === "no") {
     
-    userProfile["fase"] = fasCat["fase_2"];
-    userProfile["bloqueo"] = bloqCat["bloqueo_2"];
-    userProfile["temor"] = temCat["temor_2"];
-    userProfile["mensaje"] = menCat["mensaje_2"];
-    userProfile["necesidad"] = necCat["necesidad_2"];
+    userProfile["fase"] = fase["cat2"];
+    userProfile["bloqueo"] = bloqueo["cat2"];
+    userProfile["temor"] = temor["cat2"];
+    userProfile["mensaje"] = mensaje["cat2"];
+    userProfile["necesidad"] = necesidad["cat2"];
 
 } else if (userProfile["ans8"] === "si" || userProfile["ans19"] === "no" || userProfile["ans29"] === "si" || userProfile["ans39"] === "no") {
 
-    userProfile["fase"] = fasCat["fase_3"];
-    userProfile["bloqueo"] = bloqCat["bloqueo_3"];
-    userProfile["temor"] = temCat["temor_3"];
-    userProfile["mensaje"] = menCat["mensaje_3"];
-    userProfile["necesidad"] = necCat["necesidad_3"];
+    userProfile["fase"] = fase["cat3"];
+    userProfile["bloqueo"] = bloqueo["cat3"];
+    userProfile["temor"] = temor["cat3"];
+    userProfile["mensaje"] = mensaje["cat3"];
+    userProfile["necesidad"] = necesidad["cat3"];
 
 } else if (userProfile["ans2"] === "si" || userProfile["ans11"] === "no" || userProfile["ans21"] === "si" || userProfile["ans33"] === "no") {
 
-    userProfile["fase"] = fasCat["fase_4"];
-    userProfile["bloqueo"] = bloqCat["bloqueo_4"];
-    userProfile["temor"] = temCat["temor_4"];
-    userProfile["mensaje"] = menCat["mensaje_4"];
-    userProfile["necesidad"] = necCat["necesidad_4"];
+    userProfile["fase"] = fase["cat4"];
+    userProfile["bloqueo"] = bloqueo["cat4"];
+    userProfile["temor"] = temor["cat4"];
+    userProfile["mensaje"] = mensaje["cat4"];
+    userProfile["necesidad"] = necesidad["cat4"];
 
 } else if (userProfile["ans4"] === "no" || userProfile["ans17"] === "si" || userProfile["ans27"] === "no" || userProfile["ans38"] === "si") {
 
-    userProfile["fase"] = fasCat["fase_5"];
-    userProfile["bloqueo"] = bloqCat["bloqueo_5"];
-    userProfile["temor"] = temCat["temor_5"];
-    userProfile["mensaje"] = menCat["mensaje_5"];
-    userProfile["necesidad"] = necCat["necesidad_5"];
+    userProfile["fase"] = fase["cat5"];
+    userProfile["bloqueo"] = bloqueo["cat5"];
+    userProfile["temor"] = temor["cat5"];
+    userProfile["mensaje"] = mensaje["cat5"];
+    userProfile["necesidad"] = necesidad["cat5"];
 
 } else if (userProfile["ans3"] === "si" || userProfile["ans12"] === "no" || userProfile["ans24"] === "no" || userProfile["ans34"] === "si") {
 
-    userProfile["fase"] = fasCat["fase_6"];
-    userProfile["bloqueo"] = bloqCat["bloqueo_6"];
-    userProfile["temor"] = temCat["temor_6"];
-    userProfile["mensaje"] = menCat["mensaje_6"];
-    userProfile["necesidad"] = necCat["necesidad_6"];
+    userProfile["fase"] = fase["cat6"];
+    userProfile["bloqueo"] = bloqueo["cat6"];
+    userProfile["temor"] = temor["cat6"];
+    userProfile["mensaje"] = mensaje["cat6"];
+    userProfile["necesidad"] = necesidad["cat6"];
 
 } else if (userProfile["ans6"] === "si" || userProfile["ans13"] === "no" || userProfile["ans22"] === "no" || userProfile["ans31"] === "si") {
 
-    userProfile["fase"] = fasCat["fase_7"];
-    userProfile["bloqueo"] = bloqCat["bloqueo_7"];
-    userProfile["temor"] = temCat["temor_7"];
-    userProfile["mensaje"] = menCat["mensaje_7"];
-    userProfile["necesidad"] = necCat["necesidad_7"];
+    userProfile["fase"] = fase["cat7"];
+    userProfile["bloqueo"] = bloqueo["cat7"];
+    userProfile["temor"] = temor["cat7"];
+    userProfile["mensaje"] = mensaje["cat7"];
+    userProfile["necesidad"] = necesidad["cat7"];
 
 } else if (userProfile["ans7"] === "no" || userProfile["ans14"] === "si" || userProfile["ans23"] === "si" || userProfile["ans32"] === "no") {
 
 
-    userProfile["fase"] = fasCat["fase_8"];
-    userProfile["bloqueo"] = bloqCat["bloqueo_8"];
-    userProfile["temor"] = temCat["temor_8"];
-    userProfile["mensaje"] = menCat["mensaje_8"];
-    userProfile["necesidad"] = necCat["necesidad_8"];
+    userProfile["fase"] = fase["cat8"];
+    userProfile["bloqueo"] = bloqueo["cat8"];
+    userProfile["temor"] = temor["cat8"];
+    userProfile["mensaje"] = mensaje["cat8"];
+    userProfile["necesidad"] = necesidad["cat8"];
 
 } else {
     
-    userProfile["fase"] = noMatch["fase"];
-    userProfile["bloqueo"] = noMatch["bloqueo"];
-    userProfile["temor"] = noMatch["temor"];
-    userProfile["mensaje"] = noMatch["mensaje"];
-    userProfile["necesidad"] = noMatch["necesidad"];
+    userProfile["fase"] = noMatch["cat1"];
+    userProfile["bloqueo"] = noMatch["cat2"];
+    userProfile["temor"] = noMatch["cat3"];
+    userProfile["mensaje"] = noMatch["cat4"];
+    userProfile["necesidad"] = noMatch["cat5"];
 }
 
 
