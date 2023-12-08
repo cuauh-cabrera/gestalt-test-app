@@ -39,11 +39,11 @@ const necesidad = new testCat("Relajacion","Placer","Reconocimiento","Aceptacion
 const noMatch = new testCat ("Fase no determinada","Bloqueo no determinado","Temor no determinado","Mensaje no determinado","Necesidad no determinada");
 
 //Get user info
-let userName = prompt('Captura tu nombre',).trim().toLocaleLowerCase();
-let userAge = prompt('Ingresa tu edad',);
-let userGenre = prompt('Indica tu genero: Masculino (M) o Femenino (F)',).trim().toLocaleLowerCase();
-let createdAt = new Date();
-let uniqueId = generateId();
+//let userName = prompt('Captura tu nombre',).trim().toLocaleLowerCase();
+//let userAge = prompt('Ingresa tu edad',);
+//let userGenre = prompt('Indica tu genero: Masculino (M) o Femenino (F)',).trim().toLocaleLowerCase();
+//let createdAt = new Date();
+//let uniqueId = generateId();
 
 while (userName === null || userName == undefined || userName.trim() == '') {
     userName = prompt('Por favor captura tu nombre', '');

@@ -1,13 +1,1059 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Psicodiagnóstico Gestalt de Salama</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Test Psicodiagnóstico</h1>
+    </header>
+    <main>
+        <form action="" method="post">
+            <!--USER INFO-->
+            <section class="user-info">
+                <h2>Informacion del Paciente</h2>
+                <div class="user-info__input">
+                    <label for="user-name">Nombre:</label>
+                    <input type="text" name="user-name" id="user-name" required>
+                </div>
+                <div class="user-info__input">
+                    <label for="user-age">Edad: </label>
+                    <input type="number" name="user-age" id="user-age" required>
+                </div>
+                <div class="user-info__input">
+                    <label for="user-gender">Genero: </label>
+                    <select name="user-gener" id="user-gender">
+                        <option value="selecciona">Selecciona</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="no-binario">No Binario</option>
+                    </select>
+                </div>
+            </section>
+            <!--TEST-->
+            <section class="test">
+                <h2>Instrucciones</h2>
+                <p>
+                    A continuacion se hallara una serie de afirmaciones respecto a un tema especifico. Tome en cuenta
+                    que se trata de un rasgo o actitud frecuente en usted y debera contestar con <span>SI</span> o
+                    <span>NO.</span><br><span>EVITE</span> marcar una afirmacion con <span>SI</span> o <span>NO</span>.
+                    Recuerde contestar <span>TODAS</span> las preguntas. <br> <span>Dispone de 15 minutos para responder
+                        el cuestionario.</span> Gracias!
+                </p>
+                <!--QUESTION 1-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 1:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Soy insensible
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q1-a1">
+                                    <input type="radio" id="q1-a1" name="q1" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q1-a2">
+                                    <input type="radio" id="q1-a2" name="q1" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 2-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 2:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Soy feliz como soy
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q2-a1">
+                                    <input type="radio" id="q2-a1" name="q2" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2-a2">
+                                    <input type="radio" id="q2-a2" name="q2" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 3-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 3:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Cuando algo me disgusta lo digo
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q3-a1">
+                                    <input type="radio" id="q3-a1" name="q3" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q3-a2">
+                                    <input type="radio" id="q3-a2" name="q3" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 4-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 4:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me molesta que me vean llorar
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q4-a1">
+                                    <input type="radio" id="q4-a1" name="q4" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q4-a2">
+                                    <input type="radio" id="q4-a2" name="q4" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 5-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 5:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Soy emocional pero me aguanto
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q5-a1">
+                                    <input type="radio" id="q5-a1" name="q5" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q5-a2">
+                                    <input type="radio" id="q5-a2" name="q5" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 6-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 6:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me desagrada hacer lo mismo que los demas
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q6-a1">
+                                    <input type="radio" id="q6-a1" name="q6" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q6-a2">
+                                    <input type="radio" id="q6-a2" name="q6" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 7-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 7:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            No puedo dejar de ser como soy
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q7-a1">
+                                    <input type="radio" id="q7-a1" name="q7" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q7-a2">
+                                    <input type="radio" id="q7-a2" name="q7" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 8-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 8:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Evito culpar a los demas si me siento mal
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q8-a1">
+                                    <input type="radio" id="q8-a1" name="q8" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q8-a2">
+                                    <input type="radio" id="q8-a2" name="q8" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 9-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 9:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Siempre termino lo que empiezo
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q9-a1">
+                                    <input type="radio" id="q9-a1" name="q9" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q9-a2">
+                                    <input type="radio" id="q9-a2" name="q9" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 10-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 10:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me siento culpable si culpo a los demas
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q10-a1">
+                                    <input type="radio" id="q10-a1" name="q10" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q10-a2">
+                                    <input type="radio" id="q10-a2" name="q10" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 11-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 11:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Debo evitar mostrar mi enojo
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q11-a1">
+                                    <input type="radio" id="q11-a1" name="q11" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q11-a2">
+                                    <input type="radio" id="q11-a2" name="q11" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 12-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 12:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me abstengo de discutir
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q12-a1">
+                                    <input type="radio" id="q12-a1" name="q12" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q12-a2">
+                                    <input type="radio" id="q12-a2" name="q12" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 13-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 13:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Hago lo que los demas quieren aunque me disguste
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q13-a1">
+                                    <input type="radio" id="q13-a1" name="q13" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q13-a2">
+                                    <input type="radio" id="q13-a2" name="q13" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 14-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 14:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me disgusta pensar, sentir o hacer lo mismo mucho tiempo
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q14-a1">
+                                    <input type="radio" id="q14-a1" name="q14" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q14-a2">
+                                    <input type="radio" id="q14-a2" name="q14" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 15-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 15:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me gusta aprender cosas nuevas
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q15-a1">
+                                    <input type="radio" id="q15-a1" name="q15" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q15-a2">
+                                    <input type="radio" id="q15-a2" name="q15" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 16-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 16:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Dejo las cosas para despues
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q16-a1">
+                                    <input type="radio" id="q16-a1" name="q16" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q16-a2">
+                                    <input type="radio" id="q16-a2" name="q16" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 17-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 17:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Expreso lo que me molesta
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q17-a1">
+                                    <input type="radio" id="q17-a1" name="q17" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q17-a2">
+                                    <input type="radio" id="q17-a2" name="q17" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 18-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 18:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Evito sentir
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q18-a1">
+                                    <input type="radio" id="q18-a1" name="q18" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q18-a2">
+                                    <input type="radio" id="q18-a2" name="q18" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 19-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 19:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Seria feliz si no fuera por los demas
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q19-a1">
+                                    <input type="radio" id="q19-a1" name="q19" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q19-a2">
+                                    <input type="radio" id="q19-a2" name="q19" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 20-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 20:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Soy constante en mi inconsistencia
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q20-a1">
+                                    <input type="radio" id="q20-a1" name="q20" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q20-a2">
+                                    <input type="radio" id="q20-a2" name="q20" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 21-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 21:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Hago lo que quiero a pesar de que me digan lo contrario
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q21-a1">
+                                    <input type="radio" id="q21-a1" name="q21" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q21-a2">
+                                    <input type="radio" id="q21-a2" name="q21" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 22-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 22:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Siempre estoy de acuerdo con los demas
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q22-a1">
+                                    <input type="radio" id="q22-a1" name="q22" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q22-a2">
+                                    <input type="radio" id="q22-a2" name="q22" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 23-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 23:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Soy capaz de dejar de tener una idea fija
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q23-a1">
+                                    <input type="radio" id="q23-a1" name="q23" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q23-a2">
+                                    <input type="radio" id="q23-a2" name="q23" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 24-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 24:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Evito enfrentar
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q24-a1">
+                                    <input type="radio" id="q24-a1" name="q24" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q24-a2">
+                                    <input type="radio" id="q24-a2" name="q24" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 25-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 25:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me disgusta evitar lo inevitable
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q25-a1">
+                                    <input type="radio" id="q25-a1" name="q25" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q25-a2">
+                                    <input type="radio" id="q25-a2" name="q25" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 26-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 26:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me gusta sentir
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q26-a1">
+                                    <input type="radio" id="q26-a1" name="q26" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q26-a2">
+                                    <input type="radio" id="q26-a2" name="q26" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 27-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 27:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Evito manifestar lo que me molesta
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q27-a1">
+                                    <input type="radio" id="q27-a1" name="q27" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q27-a2">
+                                    <input type="radio" id="q27-a2" name="q27" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 28-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 28:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Evito dejar para mañana lo que puedo hacer hoy
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q28-a1">
+                                    <input type="radio" id="q28-a1" name="q28" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q28-a2">
+                                    <input type="radio" id="q28-a2" name="q28" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 29-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 29:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me abstengo de culpar a los demas de mi fracaso
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q29-a1">
+                                    <input type="radio" id="q29-a1" name="q29" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q29-a2">
+                                    <input type="radio" id="q29-a2" name="q29" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 30-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 30:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            A veces dejo las cosas para despues
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q30-a1">
+                                    <input type="radio" id="q30-a1" name="q30" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q30-a2">
+                                    <input type="radio" id="q30-a2" name="q30" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 31-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 31:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me disgusta que me digan lo que tengo que hacer
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q31-a1">
+                                    <input type="radio" id="q31-a1" name="q31" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q31-a2">
+                                    <input type="radio" id="q31-a2" name="q31" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 32-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 32:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me es imposible dejar de pensar en lo que ya paso
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q32-a1">
+                                    <input type="radio" id="q32-a1" name="q32" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q32-a2">
+                                    <input type="radio" id="q32-a2" name="q32" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 33-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 33:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Soy como me enseñaron que debe
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q33-a1">
+                                    <input type="radio" id="q33-a1" name="q33" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q33-a2">
+                                    <input type="radio" id="q33-a2" name="q33" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 34-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 34:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Defiendo mis opiniones
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q34-a1">
+                                    <input type="radio" id="q34-a1" name="q34" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q34-a2">
+                                    <input type="radio" id="q34-a2" name="q34" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 35-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 35:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Debo hacer lo que los demas quieren
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q35-a1">
+                                    <input type="radio" id="q35-a1" name="q35" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q35-a2">
+                                    <input type="radio" id="q35-a2" name="q35" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 36-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 36:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Soy sensible
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q36-a1">
+                                    <input type="radio" id="q36-a1" name="q36" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q36-a2">
+                                    <input type="radio" id="q36-a2" name="q36" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 37-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 37:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me desagrada terminar lo que empiezo
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q37-a1">
+                                    <input type="radio" id="q37-a1" name="q37" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q37-a2">
+                                    <input type="radio" id="q37-a2" name="q37" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 38-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 38:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Expreso lo que me disgusta
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q38-a1">
+                                    <input type="radio" id="q38-a1" name="q38" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q38-a2">
+                                    <input type="radio" id="q38-a2" name="q38" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 39-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 39:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Estaria bien si no fuera por los demas
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q39-a1">
+                                    <input type="radio" id="q39-a1" name="q39" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q39-a2">
+                                    <input type="radio" id="q39-a2" name="q39" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <!--QUESTION 40-->
+                <div class="test__block">
+                    <p>
+                        PREGUNTA 40:
+                    </p>
+                    <fieldset class="test__block-question">
+                        <legend>
+                            Me siento mal cuando me presionan
+                        </legend>
+                        <ul class="test__block-question--list">
+                            <li>
+                                <label for="q40-a1">
+                                    <input type="radio" id="q40-a1" name="q40" value="Si">
+                                    Si
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q40-a2">
+                                    <input type="radio" id="40-a2" name="q40" value="No">
+                                    No
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <button type="submit">Enviar Respuestas</button>
+        </form>
+    </main>
+    <!--FOOTER-->
+    <footer>
+
+    </footer>
     <script src="./app.js"></script>
 </body>
+
 </html>
